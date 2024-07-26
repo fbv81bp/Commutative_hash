@@ -26,7 +26,7 @@ for testing in range(10):
         for k in range(len(keys)): # rounds of using key material to select diverse permutations
             donut = []
             for d in range(len(data)):
-                donut.append( (data[d**exps[keys[k]]% base] + data[d**exps[keys[k-1]]%base]) % 256) # elementwise sums of pairs of compatible permutations in every round
+                donut.append( (data[d ** exps[keys[k]] % base] + data[d ** exps[keys[k-1]] % base]) % 256) # elementwise sums of pairs of compatible permutations in every round
         return(donut)
 
     print("Alice's key:", keyAlice)
