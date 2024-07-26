@@ -1,5 +1,5 @@
 # Commutative_hash
-### A commutative hash, that relies on permutations and sums to hinder solving the discrete logarithm problem.
+### A commutative hash, that relies on modexp powered permutations and modular sums that should hinder solving the discrete logarithm problem.
 
 Exponents by a smaller primes over the modulus of one larger prime create such permutations that may be shuffled.
 
