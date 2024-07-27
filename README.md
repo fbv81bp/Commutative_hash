@@ -1,7 +1,7 @@
 # Commutative_hash
 ### A commutative hash, that relies on modexp powered permutations and modular sums that should hinder solving the discrete logarithm problem.
 
-Exponents by a smaller primes over the modulus of one larger prime create such permutations that may be shuffled.
+Exponents by some smaller primes over the modulus of one larger prime create such permutations that may be shuffled.
 
 Simply using a shuffle of such permutations would just result in one equal permutation, whose exponent would be the product of all exponents that resulted the sub-permutations.
 
