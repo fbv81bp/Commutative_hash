@@ -14,4 +14,4 @@ Summing up the core idea is, that modular exponentiation is treated as an index 
 ## Cryptographic secutity
 Well this is my own, private development, not scrutinized by anybody yet. I have high hopes, but no proofs whatsoever.
 
-However I hope it may be quantum resistant because it is a permutation structure afterall, not a closed mathematical equation, yet if I have merely came up with a frankly random rolling hash, that is not so secure afterall, then I'm still content. :)
+However I hope it may be quantum resistant because it is a permutation structure afterall, not a closed mathematical equation, yet if I have merely come up with a frankly random rolling hash, that is not so secure afterall, then I'm still content. :)
