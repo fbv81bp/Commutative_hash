@@ -10,3 +10,8 @@ These sub-permutations are 'compatible' in a sense, that no matter what, however
 However, since addition is commutative, we may sum up outputs of parallel layers of these permutations, in order to hinder tracing back based on the final output, what exponent should be equal to the product of exponents inbetween, so preventing this way to calculate the discrete logarithm is vital.
 
 Summing up the core idea is, that modular exponentiation is treated as an index function to an array, and multiple rounds of such permutations are applied one after the other, while inbetween the layers of permutations, the array values are summed up over a modulus, to hinder tracing back the individual permutations. (Which would be very easy if a discrete logarithm could determine their endproduct from the final series of outputs.)
+
+## Cryptographic secutity
+Well this is my own, private development, not scrutinized by anybody yet. I have high hopes, but no proofs whatsoever.
+
+However I hope it may be quantum resistant because it is a permutation structure afterall, not a closed mathematical equation, yet if I have merely came up with a frankly random rolling hash, that is not so secure afterall, then I'm still content. :)
