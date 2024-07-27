@@ -1,4 +1,4 @@
-# Commutative_hash
+# Commutative hash
 ### A commutative hash, that relies on modexp powered permutations and modular sums that should hinder solving the discrete logarithm problem.
 
 Exponents by some smaller primes over the modulus of one larger prime create such permutations that may be shuffled.
