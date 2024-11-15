@@ -52,9 +52,9 @@ from copy import deepcopy
 def shuffle(din, keys):
     donut = deepcopy(din)
     for k in range(len(keys)):
-        din = deepcopy(donut)
+        din = deepcopy(donut) # correction: line was missing; seed's dispersion gets avelanche effect this way
         for d in range(len(din)):
-            donut[perms[keys[k]][d]] += din[d]
+            donut[perms[keys[k]][d]] += din[d] # corrections: keys[] were missing... ;)
             donut[perms[keys[k-2]][d]] += din[d]
             donut[perms[keys[k-11]][d]] += din[d]
             donut[perms[keys[k]][d]] %= 17
