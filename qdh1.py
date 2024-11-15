@@ -43,7 +43,7 @@ for f in filtered[1:]:
     perms.append(perm)
 
 from random import randint as rdi
-keylength = 5
+keylength = 24
 keyringA = [rdi(0,11) for _ in range(keylength)]
 keyringB = [rdi(0,11) for _ in range(keylength)]
 seed = [rdi(0,16) for _ in range(4096)]
@@ -54,12 +54,12 @@ def shuffle(din, keys):
     for k in range(len(keys)):
         din = deepcopy(donut)
         for d in range(len(din)):
-            donut[perms[k][d]] += din[d]
-            donut[perms[k-2][d]] += din[d]
-            donut[perms[k-11][d]] += din[d]
-            donut[perms[k][d]] %= 17
-            donut[perms[k-2][d]] %= 17
-            donut[perms[k-11][d]] %= 17
+            donut[perms[keys[k]][d]] += din[d]
+            donut[perms[keys[k-2]][d]] += din[d]
+            donut[perms[keys[k-11]][d]] += din[d]
+            donut[perms[keys[k]][d]] %= 17
+            donut[perms[keys[k-2]][d]] %= 17
+            donut[perms[keys[k-11]][d]] %= 17
     return(donut)
 
 print(shuffle(shuffle(seed, keyringA), keyringB) == shuffle(shuffle(seed, keyringA), keyringB))
